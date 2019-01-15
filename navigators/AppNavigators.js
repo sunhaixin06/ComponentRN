@@ -1,16 +1,28 @@
 import { createStackNavigator  } from 'react-navigation';
 import HomePage from '../page/HomePage';
-import Page1 from '../page/Page1';
+import Flex from '../page/components/Layout/Flex/FlexExample';
+import WingBlank from '../page/components/Layout/WingBlank/WingBlankExample';
+import WhiteSpace from '../page/components/Layout/WhiteSpace/WhiteSpaceExample';
+
 
 export const AppStackNavigator = createStackNavigator({
     HomePage:{
-        screen: HomePage,
-        // navigationOptions:({navigation}) =>({
-        //     title: "支付宝RN组件库"
-        // })
+        screen: HomePage
     },
-    Page1:{
-        screen: Page1,
+    Flex:{
+        screen: Flex,
+        navigationOptions:({navigation}) =>({
+            title: `${navigation.state.params.name}`
+        })
+    },
+    WingBlank:{
+        screen: WingBlank,
+        navigationOptions:({navigation}) =>({
+            title: `${navigation.state.params.name}`
+        })
+    },
+    WhiteSpace:{
+        screen: WhiteSpace,
         navigationOptions:({navigation}) =>({
             title: `${navigation.state.params.name}`
         })

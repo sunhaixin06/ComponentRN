@@ -16,8 +16,8 @@ export default class IndexPage extends Component {
       const { navigation } = this.props;
       return (
         <View style={{ marginTop: 20}}>
-            {/* <WhiteSpace />
-            <WhiteSpace /> */}
+            <WhiteSpace />
+            <WhiteSpace />
             <WingBlank>
                 <Accordion
                     onChange={this.onChange}
@@ -27,10 +27,17 @@ export default class IndexPage extends Component {
                     <List>
                         <List.Item arrow="horizontal" 
                         onPress={()=>{
-                            this.props.navigate('Page1',{ name: 'Flex'});
+                            this.props.navigate('Flex',{ name: 'Flex'});
                         }}>Flex Flex布局</List.Item>
-                        <List.Item arrow="horizontal">WhiteSpace 上下留白</List.Item>
-                        <List.Item arrow="horizontal">WingBlank 两翼留白</List.Item>
+                        <List.Item arrow="horizontal" 
+                         onPress={()=>{
+                            this.props.navigate('WhiteSpace',{ name: 'WhiteSpace'});
+                        }}>WhiteSpace 上下留白</List.Item>
+                        <List.Item arrow="horizontal"
+                        onPress={()=>{
+                            this.props.navigate('WingBlank',{ name: 'WingBlank'})
+                        }}
+                        >WingBlank 两翼留白</List.Item>
                     </List>
                     </Accordion.Panel>
                 </Accordion>
