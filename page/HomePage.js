@@ -1,12 +1,15 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet} from 'react-native';
+import { WhiteSpace } from '@ant-design/react-native';
 import LayoutIndex from './components/Layout';
+import NavigationIndex from './components/Navigation';
+
 
 export default class HomePage extends Component {
-  // static navigationOptions ={
-  //     title: '首页',
-  //     headerBackkTitle: '返回首页'
-  // }
+  static navigationOptions ={
+      title: '支付宝移动组件库',
+      headerBackTitle: '返回首页'
+  }
   constructor() {
     super(...arguments);
     this.state = {
@@ -17,6 +20,7 @@ export default class HomePage extends Component {
     };
   }
   render() {
+    const { navigation:{ navigate }} = this.props;
     return (
          <View style={styles.container}>
             <View style={styles.title_top}>
@@ -25,7 +29,10 @@ export default class HomePage extends Component {
 	          <View style={styles.title_bottom}>
 	            <Text style={styles.demo_subtitle}>支付宝移动端组件库</Text>
 	          </View>
-              <LayoutIndex navigate={this.props.navigation.navigate}/>
+              <WhiteSpace size="xl"/>
+              <LayoutIndex navigate={navigate}/>
+              <WhiteSpace/>
+              <NavigationIndex navigate={navigate}/>
           </View>
     )
   }
