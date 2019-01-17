@@ -54,27 +54,33 @@ export default class DrawerExample extends Component {
       });
     // Todo: https://github.com/DefinitelyTyped/DefinitelyTyped
     const sidebar = (
-      <ScrollView style={[styles.container]}>
+      <ScrollView 
+      automaticallyAdjustContentInsets={false}
+      showsHorizontalScrollIndicator={false}
+      showsVerticalScrollIndicator={false}
+      style={[styles.container]}>
         <List>{itemArr}</List>
       </ScrollView>
     );
     return (
-      <Drawer
-        sidebar={sidebar}
-        position="right"
-        open={false}
-        drawerRef={el => (this.drawer = el)}
-        onOpenChange={this.onOpenChange}
-        drawerBackgroundColor="#ccc"
-      >
-        <Basic/>
-        <View style={{ flex: 1, marginTop: 114, padding: 8 }}>
-          <Button onPress={() => this.drawer && this.drawer.openDrawer()}>
-            Open drawer
-          </Button>
-          <WhiteSpace />
-        </View>
-      </Drawer>
+      <View style={{ backgroundColor: '#f5f5f9', flex: 1}}>
+          <Drawer
+            sidebar={sidebar}
+            position="right"
+            open={false}
+            drawerRef={el => (this.drawer = el)}
+            onOpenChange={this.onOpenChange}
+            drawerBackgroundColor="#ccc"
+          >
+            <Basic/>
+            <View style={{ flex: 1, marginTop: 114, padding: 8 }}>
+              <Button onPress={() => this.drawer && this.drawer.openDrawer()}>
+                Open drawer
+              </Button>
+              <WhiteSpace />
+            </View>
+          </Drawer>
+      </View>
     );
   }
 }

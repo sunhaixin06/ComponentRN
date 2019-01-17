@@ -17,9 +17,10 @@ const styles = StyleSheet.create({
 
 export default class Basic extends Component {
   render() {
+    const { name }= this.props;
     return (
       <View>
-        <Text style={styles.container}>Basic</Text>
+        <Text style={styles.container}>{name? name: "Basic"}</Text>
       </View>
     );
   }

@@ -15,7 +15,7 @@ export default class BasicTagExample extends Component {
   }
   render() {
     return (
-      <View>
+      <View style={{backgroundColor: '#f5f5f9', flex: 1}}>
           <Basic/>
           <View style={{ paddingTop: 30, paddingHorizontal: 20 }}>
               <Text>Simplest</Text>

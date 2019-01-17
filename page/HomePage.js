@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
-import { Text, View, StyleSheet} from 'react-native';
+import { Text, View, StyleSheet, ScrollView} from 'react-native';
 import { WhiteSpace } from '@ant-design/react-native';
 import LayoutIndex from './components/Layout';
 import NavigationIndex from './components/Navigation';
+import DataEntryIndex from './components/DataEntry';
 
 export default class HomePage extends Component {
   static navigationOptions ={
@@ -12,7 +13,11 @@ export default class HomePage extends Component {
   render() {
     const { navigation:{ navigate }} = this.props;
     return (
-         <View style={styles.container}>
+         <ScrollView 
+         automaticallyAdjustContentInsets={false}
+         showsHorizontalScrollIndicator={false}
+         showsVerticalScrollIndicator={false}
+         style={styles.container}>
             <View style={styles.title_top}>
 	            <Text style={styles.demo_title}>Ant Design Mobile RN</Text>
 	          </View>
@@ -23,7 +28,9 @@ export default class HomePage extends Component {
               <LayoutIndex navigate={navigate}/>
               <WhiteSpace/>
               <NavigationIndex navigate={navigate}/>
-          </View>
+              <WhiteSpace/>
+              <DataEntryIndex navigate={navigate}/>
+          </ScrollView>
     )
   }
 } 

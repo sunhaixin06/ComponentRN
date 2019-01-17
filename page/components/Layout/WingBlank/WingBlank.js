@@ -20,7 +20,7 @@ const PlaceHolder = props => (
 export default class WingBlankExample extends Component {
   render() {
     return (
-      <View>
+      <View style={{backgroundColor: '#f5f5f9', flex: 1}}>
         <Basic/>
         <WhiteSpace />
         <WingBlank>

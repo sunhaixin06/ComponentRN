@@ -31,7 +31,7 @@ export default class PopoverExample extends Component {
       </Item>,
     ]);
     return (
-      <View>
+      <View style={{backgroundColor: '#f5f5f9', flex: 1}}>
         <Basic/>
         <View>
           <Text style={{ marginTop: 30, marginLeft: 100 }}>
@@ -85,5 +85,3 @@ const styles = StyleSheet.create({
     borderColor: '#ccc',
   },
 });
-export const title = 'Popover';
-export const description = 'Popover example';
