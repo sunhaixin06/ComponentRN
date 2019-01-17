@@ -1,5 +1,5 @@
 import React,{ Component } from 'react';
-import Basic from '../Basic';
+import Basic from '../../Basic';
 import { ScrollView, Text, TouchableWithoutFeedback, View } from 'react-native';
 import { Button, Flex, WhiteSpace, WingBlank } from '@ant-design/react-native';
 
