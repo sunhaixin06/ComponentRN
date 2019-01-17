@@ -5,6 +5,7 @@ const locale = {
   prevText: '上一步',
   nextText: '下一步',
 };
+
 export default class PaginationExample extends Component {
   render() {
     return (

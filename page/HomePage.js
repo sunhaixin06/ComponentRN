@@ -4,20 +4,10 @@ import { WhiteSpace } from '@ant-design/react-native';
 import LayoutIndex from './components/Layout';
 import NavigationIndex from './components/Navigation';
 
-
 export default class HomePage extends Component {
   static navigationOptions ={
       title: '支付宝移动组件库',
-      headerBackTitle: '返回首页'
-  }
-  constructor() {
-    super(...arguments);
-    this.state = {
-      activeSections: [2, 0],
-    };
-    this.onChange = activeSections => {
-      this.setState({ activeSections });
-    };
+      headerBackTitle: '返回'
   }
   render() {
     const { navigation:{ navigate }} = this.props;

@@ -6,7 +6,7 @@ export default class ShareIndexPage extends Component {
     constructor() {
       super(...arguments);
       this.state = {
-        activeSections: [2, 0],
+        activeSections: [],
       };
       this.onChange = activeSections => {
         this.setState({ activeSections });
@@ -21,7 +21,9 @@ export default class ShareIndexPage extends Component {
                 <Accordion
                     onChange={this.onChange}
                     activeSections={this.state.activeSections}>
-                    <Accordion.Panel header={ShareTitle} style={styles.connect_}>
+                    <Accordion.Panel 
+                    header={ShareTitle} 
+                    style={styles.connect_}>
                     <List>
                         {ShareData.map(val =>(
                             <List.Item 

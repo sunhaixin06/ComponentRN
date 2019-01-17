@@ -3,30 +3,19 @@ import Basic from '../../Basic';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { Popover } from '@ant-design/react-native';
 const Item = Popover.Item;
+
 export default class PopoverExample extends Component {
   constructor(props) {
     super(props);
-    // componentDidMount() {
-    //   setInterval(() => {
-    //     this.refs.mc.refs.menuContext.toggleMenu('m');
-    //   }, 2000);
-    // }
     this.onSelect = value => {
       this.setState({
-        // visible: false,
         selected: value,
       });
     };
     this.state = {
-      // visible: false,
       selected: '',
     };
   }
-  // handleVisibleChange = (_visible) => {
-  //   this.setState({
-  //     visible,
-  //   });
-  // }
   render() {
     let overlay = [1, 2, 3].map((i, index) => (
       <Item key={index} value={`option ${i}`}>
@@ -55,7 +44,6 @@ export default class PopoverExample extends Component {
             style={{ backgroundColor: '#eee' }}
             overlay={overlay}
             contextStyle={styles.contextStyle}
-            // tslint:disable-next-line:jsx-no-multiline-js
             overlayStyle={[
               styles.overlayStyle,
               Platform.OS === 'android' && styles.androidOverlayStyle,
