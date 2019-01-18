@@ -13,7 +13,7 @@ export const NavList = [
     {name: 'Tabs 标签页', data: 'Tabs'},
 ]
 
-export const DataList = [
+export const EntryList = [
     {name: 'Button 按钮', data: 'Button'},
     {name: 'Checkbox 复选框', data: 'Checkbox'},
     {name: 'DatePickerView 选择器', data: 'DatePickerView'},
@@ -27,4 +27,18 @@ export const DataList = [
     {name: 'Stepper 步进器', data: 'Stepper'},
     {name: 'SearchBar 搜索栏', data: 'SearchBar'},
     {name: 'TextareaItem 多行输入', data: 'TextareaItem'},
+]
+
+export const DisplayList = [
+    {name: 'Accordion 手风琴', data: 'Accordion'},
+    {name: 'Badge 徽标数', data: 'Badge'},
+    {name: 'Carousel 走马灯', data: 'Carousel'},
+    {name: 'Card 卡片', data: 'Card'},
+    {name: 'Grid 宫格', data: 'Grid'},
+    {name: 'Icon 图标', data: 'Icon'},
+    {name: 'ListView 列表', data: 'ListView'},
+    {name: 'List 列表', data: 'List'},
+    {name: 'NoticeBar 通告栏', data: 'NoticeBar'},
+    {name: 'Steps 步骤条', data: 'Steps'},
+    {name: 'Tag 标签', data: 'Tag'},
 ]

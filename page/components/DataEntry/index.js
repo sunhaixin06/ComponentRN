@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { DataList } from '../constants';
+import { EntryList } from '../constants';
 import { View } from 'react-native';
 import ShareIndexPage from '../ShareIndexPage';
 
@@ -10,8 +10,8 @@ export default class IndexPage extends Component {
       return (
           <ShareIndexPage 
           navigate={navigate}
-          ShareTitle="数据展示 Data Display" 
-          ShareData={DataList} />
+          ShareTitle="数据录入 Data Entry" 
+          ShareData={EntryList} />
       )
     }
 } 
