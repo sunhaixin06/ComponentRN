@@ -13,6 +13,10 @@ import Popover from '../page/components/Navigation/Popover/Popover';
 import Pagination from '../page/components/Navigation/Pagination/Pagination'; 
 import SegmentedControl from '../page/components/Navigation/SegmentedControl/SegmentedControl'; 
 
+//DataEntry
+import Button from '../page/components/DataEntry/Button/Button';
+import Checkbox from '../page/components/DataEntry/CheckBox/CheckBox';
+
 
 const router = ({navigation}) =>({
     title: `${navigation.state.params.name}`
@@ -62,6 +66,14 @@ export const AppStackNavigator = createStackNavigator({
     },
     TabBar:{
         screen: TabBar,
+        navigationOptions: router
+    },
+    Button:{
+        screen: Button,
+        navigationOptions: router
+    },
+    Checkbox:{
+        screen: Checkbox,
         navigationOptions: router
     }}, {
     defaultNavigationOptions: {
