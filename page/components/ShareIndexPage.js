@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet} from 'react-native';
+import { View, StyleSheet, Text} from 'react-native';
 import { WhiteSpace, WingBlank, Accordion, List } from '@ant-design/react-native';
 
 export default class ShareIndexPage extends Component {
@@ -25,12 +25,14 @@ export default class ShareIndexPage extends Component {
                     header={ShareTitle} 
                     style={styles.connect_}>
                     <List>
+                    <WhiteSpace/>
                         {ShareData.map(val =>(
                             <List.Item 
                             key={val.data}
                             arrow="horizontal" 
                             onPress={()=>{navigate(val.data,{ name: val.data})}}
-                            >{val.name}</List.Item>
+                            ><Text style={{ color: '#666', fontSize: 15}}>{val.name}</Text>
+                            </List.Item>
                         ))}
                     </List>
                     </Accordion.Panel>
@@ -45,7 +47,7 @@ export default class ShareIndexPage extends Component {
     connect_: {
         backgroundColor: '#fff', 
         borderRadius: 2, 
-        height: 77
+        height: 77,
     },
   });
   
