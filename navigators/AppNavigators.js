@@ -16,6 +16,12 @@ import SegmentedControl from '../page/components/Navigation/SegmentedControl/Seg
 //DataEntry
 import Button from '../page/components/DataEntry/Button/Button';
 import Checkbox from '../page/components/DataEntry/CheckBox/CheckBox';
+import DatePicker from '../page/components/DataEntry/DatePicker/DatePicker';
+import DatePickerView from '../page/components/DataEntry/DatePickerView/DatePickerView';
+import InputItem from '../page/components/DataEntry/InputItem/InputItem';
+
+
+
 
 
 const router = ({navigation}) =>({
@@ -48,10 +54,6 @@ export const AppStackNavigator = createStackNavigator({
         screen: Popover,
         navigationOptions: router
     },
-    Popover:{
-        screen: Popover,
-        navigationOptions: router
-    },
     Pagination:{
         screen: Pagination,
         navigationOptions: router
@@ -68,6 +70,7 @@ export const AppStackNavigator = createStackNavigator({
         screen: TabBar,
         navigationOptions: router
     },
+    //DataEntry
     Button:{
         screen: Button,
         navigationOptions: router
@@ -75,7 +78,20 @@ export const AppStackNavigator = createStackNavigator({
     Checkbox:{
         screen: Checkbox,
         navigationOptions: router
-    }}, {
+    },
+    DatePicker:{
+        screen: DatePicker,
+        navigationOptions: router
+    },
+    DatePickerView:{
+        screen: DatePickerView,
+        navigationOptions: router
+    },
+    InputItem:{
+        screen: InputItem,
+        navigationOptions: router
+    },
+    }, {
     defaultNavigationOptions: {
         // header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
     }
