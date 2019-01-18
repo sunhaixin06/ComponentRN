@@ -4,6 +4,7 @@ import { WhiteSpace } from '@ant-design/react-native';
 import LayoutIndex from './components/Layout';
 import NavigationIndex from './components/Navigation';
 import DataEntryIndex from './components/DataEntry';
+import DataDisplayIndex from './components/DataDisplay';
 
 export default class HomePage extends Component {
   static navigationOptions ={
@@ -30,6 +31,8 @@ export default class HomePage extends Component {
               <NavigationIndex navigate={navigate}/>
               <WhiteSpace/>
               <DataEntryIndex navigate={navigate}/>
+              <WhiteSpace/>
+              <DataDisplayIndex navigate={navigate}/>
           </ScrollView>
     )
   }
