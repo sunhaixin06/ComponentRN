@@ -1,98 +1,36 @@
 import { createStackNavigator  } from 'react-navigation';
 import HomePage from '../page/HomePage';
-//Layout
-import Flex from '../page/components/Layout/Flex/Flex';
-import WingBlank from '../page/components/Layout/WingBlank/WingBlank';
-import WhiteSpace from '../page/components/Layout/WhiteSpace/WhiteSpace';
-
-//Navigation
-import Drawer from '../page/components/Navigation/Drawer/Drawer'; 
-import Tabs from '../page/components/Navigation/Tabs/Tabs'; 
-import TabBar from '../page/components/Navigation/TabBar/TabBar'; 
-import Popover from '../page/components/Navigation/Popover/Popover'; 
-import Pagination from '../page/components/Navigation/Pagination/Pagination'; 
-import SegmentedControl from '../page/components/Navigation/SegmentedControl/SegmentedControl'; 
-
-//DataEntry
-import Button from '../page/components/DataEntry/Button/Button';
-import Checkbox from '../page/components/DataEntry/CheckBox/CheckBox';
-import DatePicker from '../page/components/DataEntry/DatePicker/DatePicker';
-import DatePickerView from '../page/components/DataEntry/DatePickerView/DatePickerView';
-import InputItem from '../page/components/DataEntry/InputItem/InputItem';
-
-
-
-
-
-const router = ({navigation}) =>({
-    title: `${navigation.state.params.name}`
-})
+import { routers } from '../page/components';
 
 export const AppStackNavigator = createStackNavigator({
-    HomePage:{
-        screen: HomePage
-    },
-    //Layout
-    Flex:{
-        screen: Flex,
-        navigationOptions: router
-    },
-    WingBlank:{
-        screen: WingBlank,
-        navigationOptions: router
-    },
-    WhiteSpace:{
-        screen: WhiteSpace,
-        navigationOptions: router
-    },
+    HomePage:{ screen: HomePage },
+    //Layout 
+    Flex: routers.Flex_,
+    WingBlank: routers.WingBlank_,
+    WhiteSpace: routers.WhiteSpace_,
     //Navigation
-    Drawer:{
-        screen: Drawer,
-        navigationOptions: router
-    },
-    Popover:{
-        screen: Popover,
-        navigationOptions: router
-    },
-    Pagination:{
-        screen: Pagination,
-        navigationOptions: router
-    },
-    SegmentedControl:{
-        screen: SegmentedControl,
-        navigationOptions: router
-    },
-    Tabs:{
-        screen: Tabs,
-        navigationOptions: router
-    },
-    TabBar:{
-        screen: TabBar,
-        navigationOptions: router
-    },
+    Drawer: routers.Drawer_,
+    Popover: routers.Popover_,
+    Pagination: routers.Pagination_,
+    SegmentedControl: routers.SegmentedControl_,
+    Tabs: routers.Tabs_,
+    TabBar: routers.TabBar_,
     //DataEntry
-    Button:{
-        screen: Button,
-        navigationOptions: router
-    },
-    Checkbox:{
-        screen: Checkbox,
-        navigationOptions: router
-    },
-    DatePicker:{
-        screen: DatePicker,
-        navigationOptions: router
-    },
-    DatePickerView:{
-        screen: DatePickerView,
-        navigationOptions: router
-    },
-    InputItem:{
-        screen: InputItem,
-        navigationOptions: router
-    },
-    }, {
+    Button: routers.Button_,
+    Checkbox: routers.Checkbox_,
+    DatePicker: routers.DatePicker_,
+    DatePickerView: routers.DatePickerView_,
+    InputItem: routers.InputItem_,
+    PickerView: routers.PickerView_,
+    Radio: routers.Radio_,
+    Switch: routers.Switch_,
+    Stepper: routers.Stepper_,
+    Slider: routers.Slider_,
+    SearchBar: routers.SearchBar_,
+    TextareaItem: routers.TextareaItem_,
+},{
     defaultNavigationOptions: {
-        // header: null,// 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
+        // header: null,
+        // 可以通过将header设为null 来禁用StackNavigator的Navigation Bar
     }
 })

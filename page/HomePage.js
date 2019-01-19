@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
 import { Text, View, StyleSheet, ScrollView} from 'react-native';
 import { WhiteSpace } from '@ant-design/react-native';
-import LayoutIndex from './components/Layout';
-import NavigationIndex from './components/Navigation';
-import DataEntryIndex from './components/DataEntry';
-import DataDisplayIndex from './components/DataDisplay';
+import LayoutIndex from './components/Layout/IndexPage';
+import NavigationIndex from './components/Navigation/IndexPage';
+import DataEntryIndex from './components/DataEntry/IndexPage';
+import DataDisplayIndex from './components/DataDisplay/IndexPage';
 
 export default class HomePage extends Component {
   static navigationOptions ={
