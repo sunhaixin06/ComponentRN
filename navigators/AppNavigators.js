@@ -28,6 +28,13 @@ export const AppStackNavigator = createStackNavigator({
     Slider: routers.Slider_,
     SearchBar: routers.SearchBar_,
     TextareaItem: routers.TextareaItem_,
+    //DataDisplay
+    Accordion: routers.Accordion_,
+    Badge: routers.Badge_,
+    Card: routers.Card_,
+    Icon: routers.Icon_,
+    Grid: routers.Grid_,
+    Carousel: routers.Carousel_
 },{
     defaultNavigationOptions: {
         // header: null,
