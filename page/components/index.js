@@ -27,16 +27,21 @@ import { TextareaItem_ } from '../components/DataEntry/TextareaItem';
 //DataDisplay
 import { Accordion_ } from '../components/DataDisplay/Accordion';
 import { Badge_ } from '../components/DataDisplay/Badge';
+import { Steps_ } from '../components/DataDisplay/Steps';
+import { Tag_ } from '../components/DataDisplay/Tag';
 import { Card_ } from '../components/DataDisplay/Card';
 import { Grid_ } from '../components/DataDisplay/Grid';
 import { Icon_ } from '../components/DataDisplay/Icon';
+import { List_ } from '../components/DataDisplay/List';
 import { Carousel_ } from '../components/DataDisplay/Carousel';
+import { ListView_ } from '../components/DataDisplay/ListView';
+import { NoticeBar_ } from '../components/DataDisplay/NoticeBar';
 
 
 export const routers =  {
     Flex_, WingBlank_, WhiteSpace_, //Layout 
     Drawer_, Tabs_, TabBar_, Popover_, Pagination_, SegmentedControl_, //Navigation
     Button_, Radio_, Slider_, Stepper_, Switch_, SearchBar_,  Checkbox_, DatePicker_, DatePickerView_, InputItem_, PickerView_, TextareaItem_, //DataEntry
-    Accordion_, Badge_ , Card_, Grid_, Icon_, Carousel_ //DataDisplay
+    Accordion_, Badge_ , Card_, Grid_, Icon_, List_, Steps_, Tag_, Carousel_, ListView_, NoticeBar_//DataDisplay
 
 };

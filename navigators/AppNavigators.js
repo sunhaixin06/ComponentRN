@@ -31,10 +31,16 @@ export const AppStackNavigator = createStackNavigator({
     //DataDisplay
     Accordion: routers.Accordion_,
     Badge: routers.Badge_,
+    Tag: routers.Tag_,
     Card: routers.Card_,
     Icon: routers.Icon_,
+    Steps: routers.Steps_,
     Grid: routers.Grid_,
-    Carousel: routers.Carousel_
+    Carousel: routers.Carousel_,
+    ListView: routers.ListView_,
+    List: routers.List_,
+    NoticeBar: routers.NoticeBar_
+
 },{
     defaultNavigationOptions: {
         // header: null,
