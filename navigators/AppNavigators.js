@@ -39,8 +39,19 @@ export const AppStackNavigator = createStackNavigator({
     Carousel: routers.Carousel_,
     ListView: routers.ListView_,
     List: routers.List_,
-    NoticeBar: routers.NoticeBar_
-
+    NoticeBar: routers.NoticeBar_,
+    //Feedback
+    ActivityIndicator: routers.ActivityIndicator_,
+    ActionSheet: routers.ActionSheet_,
+    Modal: routers.Modal_,
+    Progress: routers.Progress_,
+    Toast: routers.Toast_,
+    //Gesture
+    SwipeAction: routers.SwipeAction_,
+    // Combination
+    // Result: routers.Result_,
+    // Other
+    Provider: routers.Provider_
 },{
     defaultNavigationOptions: {
         // header: null,

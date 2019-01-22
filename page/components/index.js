@@ -37,11 +37,29 @@ import { Carousel_ } from '../components/DataDisplay/Carousel';
 import { ListView_ } from '../components/DataDisplay/ListView';
 import { NoticeBar_ } from '../components/DataDisplay/NoticeBar';
 
+// Feedback 
+import { ActivityIndicator_ } from '../components/FeedBack/ActivityIndicator';
+import { ActionSheet_ } from '../components/FeedBack/ActionSheet';
+import { Modal_ } from '../components/FeedBack/Modal';
+import { Progress_ } from '../components/FeedBack/Progress';
+import { Toast_ } from '../components/FeedBack/Toast';
+
+// Gesture
+import { SwipeAction_  } from '../components/Gesture/SwipeAction';
+
+// Combination
+import { Result_ } from '../components/Combination/Result';
+
+// Other
+import { Provider_ } from '../components/Other/Provider';
 
 export const routers =  {
     Flex_, WingBlank_, WhiteSpace_, //Layout 
     Drawer_, Tabs_, TabBar_, Popover_, Pagination_, SegmentedControl_, //Navigation
     Button_, Radio_, Slider_, Stepper_, Switch_, SearchBar_,  Checkbox_, DatePicker_, DatePickerView_, InputItem_, PickerView_, TextareaItem_, //DataEntry
-    Accordion_, Badge_ , Card_, Grid_, Icon_, List_, Steps_, Tag_, Carousel_, ListView_, NoticeBar_//DataDisplay
-
+    Accordion_, Badge_ , Card_, Grid_, Icon_, List_, Steps_, Tag_, Carousel_, ListView_, NoticeBar_,//DataDisplay
+    ActivityIndicator_, ActionSheet_, Modal_, Progress_, Toast_ ,//Feedback
+    SwipeAction_, // Gesture
+    Result_,// Combination
+    Provider_// Other
 };

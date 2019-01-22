@@ -43,3 +43,23 @@ export const DisplayList = [
     {name: 'Steps 步骤条', data: 'Steps'},
     {name: 'Tag 标签', data: 'Tag'},
 ]
+
+export const FeedbackList = [
+    {name: 'ActivityIndicator 活动指示器', data: 'ActivityIndicator'},
+    {name: 'ActionSheet 动作面板', data: 'ActionSheet'},
+    {name: 'Modal 对话框', data: 'Modal'},
+    {name: 'Progress 进度条', data: 'Progress'},
+    {name: 'Toast 轻提示', data: 'Toast'},
+]
+
+export const GestureList = [
+    {name: 'SwipeAction 滑动操作', data: 'SwipeAction'},
+]
+
+export const CombinationList = [
+    {name: 'Result 结果页', data: 'Result'},
+]
+
+export const OtherList = [
+    {name: 'Provider 国际化和皮肤配置', data: 'Provider'},
+]

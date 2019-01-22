@@ -5,6 +5,10 @@ import LayoutIndex from './components/Layout/IndexPage';
 import NavigationIndex from './components/Navigation/IndexPage';
 import DataEntryIndex from './components/DataEntry/IndexPage';
 import DataDisplayIndex from './components/DataDisplay/IndexPage';
+import FeedbackIndex from './components/FeedBack/IndexPage';
+import GestureIndex from './components/Gesture/IndexPage';
+import CombinationIndex from './components/Combination/IndexPage';
+import OtherIndex from './components/Other/IndexPage';
 
 export default class HomePage extends Component {
   static navigationOptions ={
@@ -33,6 +37,14 @@ export default class HomePage extends Component {
               <DataEntryIndex navigate={navigate}/>
               <WhiteSpace/>
               <DataDisplayIndex navigate={navigate}/>
+              <WhiteSpace/>
+              <FeedbackIndex navigate={navigate}/>
+              <WhiteSpace/>
+              <GestureIndex navigate={navigate}/>
+              <WhiteSpace/>
+              <CombinationIndex navigate={navigate}/>
+              <WhiteSpace/>
+              <OtherIndex navigate={navigate}/>
           </ScrollView>
     )
   }
