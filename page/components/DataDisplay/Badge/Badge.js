@@ -1,4 +1,3 @@
-/* tslint:disable:no-console */
 import React from 'react';
 import { ScrollView, View } from 'react-native';
 import { Badge, WhiteSpace } from '@ant-design/react-native';

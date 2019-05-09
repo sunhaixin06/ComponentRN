@@ -1,4 +1,3 @@
-/* tslint:disable:no-console */
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Accordion, List } from '@ant-design/react-native';

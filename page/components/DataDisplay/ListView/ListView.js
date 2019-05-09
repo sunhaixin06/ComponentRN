@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { ListView } from '@ant-design/react-native';
 
-export default class BasicListExample extends React.Component {
+export default class BasicListExample extends Component {
   state = {
     layout: 'list',
   };

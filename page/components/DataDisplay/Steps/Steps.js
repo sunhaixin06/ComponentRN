@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, Text, View } from 'react-native';
 import { Icon, Steps, WingBlank } from '@ant-design/react-native';
 const Step = Steps.Step;
-export default class BasicTimelineExample extends React.Component {
+export default class BasicTimelineExample extends Component {
   constructor(props) {
     super(props);
     this.state = {

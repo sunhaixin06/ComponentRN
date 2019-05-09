@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Grid, Icon } from '@ant-design/react-native';
 import { ScrollView } from 'react-native';
 import { outlineGlyphMap } from '@ant-design/icons-react-native/lib/outline';
 import Basic from '../../Basic';
-export default class IConDemo extends React.Component {
+export default class IConDemo extends Component {
   render() {
     const outlineData = Object.keys(outlineGlyphMap).map(item => ({
       icon: <Icon name={item} size="lg" />,

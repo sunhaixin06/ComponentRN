@@ -1,10 +1,9 @@
-// tslint:disable:no-empty
-import React from 'react';
+import React, { Component } from 'react';
 import { Image, ScrollView, View } from 'react-native';
 import { List } from '@ant-design/react-native';
 const Item = List.Item;
 const Brief = Item.Brief;
-export default class BasicListExample extends React.Component {
+export default class BasicListExample extends Component {
   render() {
     return (
       <ScrollView

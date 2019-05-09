@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, Text, View, StyleSheet } from 'react-native';
 import { Grid } from '@ant-design/react-native';
 const data = Array.from(new Array(9)).map((_val, i) => ({
@@ -9,7 +9,7 @@ const data = Array.from(new Array(9)).map((_val, i) => ({
 const data1 = Array.from(new Array(9)).map(() => ({
     icon: 'https://gw.alipayobjects.com/zos/rmsportal/WXoqXTHrSnRcUwEaQgXJ.png',
 }));
-export default class BasicGridExample extends React.Component {
+export default class BasicGridExample extends Component {
   render() {
     return (
       <ScrollView style={{ flex: 1, backgroundColor: '#f5f5f9' }}>

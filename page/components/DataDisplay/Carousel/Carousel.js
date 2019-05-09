@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { Carousel } from '@ant-design/react-native';
-export default class BasicCarouselExample extends React.Component {
+export default class BasicCarouselExample extends Component {
   onHorizontalSelectedIndexChange(index) {
     /* tslint:disable: no-console */
     console.log('horizontal change to', index);

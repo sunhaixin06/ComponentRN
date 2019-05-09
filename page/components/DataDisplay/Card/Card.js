@@ -1,8 +1,8 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { Text, View } from 'react-native';
 import { Card, WhiteSpace, WingBlank } from '@ant-design/react-native';
 import Basic from '../../Basic';
-export default class BasicCardExample extends React.Component {
+export default class BasicCardExample extends Component {
   render() {
     return (
       <View style={{ flex: 1, backgroundColor: '#f5f5f9' }}>

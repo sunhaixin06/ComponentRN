@@ -49,7 +49,7 @@ export const AppStackNavigator = createStackNavigator({
     //Gesture
     SwipeAction: routers.SwipeAction_,
     // Combination
-    // Result: routers.Result_,
+    Result: routers.Result_,
     // Other
     Provider: routers.Provider_
 },{

@@ -1,11 +1,10 @@
-/* tslint:disable:no-console */
-import React from 'react';
+import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Tag, WhiteSpace } from '@ant-design/react-native';
 function onChange(selected) {
   console.log(`tag selected: ${selected}`);
 }
-export default class BasicTagExample extends React.Component {
+export default class BasicTagExample extends Component {
   render() {
     return (
       <View style={{ padding: 10 }}>

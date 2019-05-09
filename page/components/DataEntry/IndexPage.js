@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { EntryList } from '../constants';
-import { View } from 'react-native';
 import ShareIndexPage from '../ShareIndexPage';
 
 export default class IndexPage extends Component {
