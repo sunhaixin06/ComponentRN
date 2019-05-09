@@ -7,6 +7,11 @@
 
 </div>
 
+#### 使用说明
+- `cnpm start`, `npm start` 可能会引发依赖包错误问题
+- 建议是用 `yarn`
+
+
 ## 参与贡献
 
 - [sunhaixin](https://gitee.com/github-29425276/ComponentRN)
